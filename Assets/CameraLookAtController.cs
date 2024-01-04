@@ -29,7 +29,6 @@ public class CameraLookAtController : MonoBehaviour
     void Update()
     {
         float z = PlayerPos.position.z;
-        Debug.Log($"Player z: {z}");
         if (z >= characterToTwinPeaksStartZ && !InTwinPeaksTilt && !HasDoneTwinPeaksTilt)
         {
             IsTrackPlayerMode = false;
